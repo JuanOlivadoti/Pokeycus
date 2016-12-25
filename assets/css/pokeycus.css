@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,600|Varela+Round');
+*{
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
 
 html body{
   background: url('../images/background.jpg') center center no-repeat;
@@ -7,66 +13,105 @@ html body{
   box-sizing: border-box;
 }
 
-/*HEADER*/
+.text-blue{
+  color:#002b5c;
+}
+
+/*======================HEADER*/
 header nav{
   background-color: #102850;
+  height: 8vh;
 }
 nav a.pokeycus-title{
   font-family: Varela Round;
   color: #fff;
   font-stretch:
 }
+nav a img{
+  height: 1.7rem;
+}
+
 /*navbar*/
+
 #slide-out{
   width: 90vw;
 }
-/*MAIN*/
+/*======================MAIN*/
 section#main{
   height:90vh;
-/*  background-color: rgba(255,0,0,0.2);
-*/}
+}
 
-section#main .top-section{
+section#main #top-section{
   height: 25vh;
-/*  background-color: rgba(0,255,0,0.2);
-*/}
+}
+#top-section .row{
+  margin-bottom:0;
+}
+/*=== poke info */
 
-.carousel {
-  background: #EEE;
+#info-container{
+  margin-top:5vh;
 }
 
-.carousel-cell {
-  height: 40vh;
-/*  background: rgba(0,0,0,0.1);
-*/  border-radius: 5px;
-}
-.carousel-cell a h4{
-  color:#fff;
-  font-size: 10vw;
-}
-#main-carousel .carousel-cell img{
-  height:65%;
+/* card info */
+#card img{
+  margin-top: 10px;
+  height: 100%;
   background-color: #102850;
   border-radius: 50%;
   border:8px solid #fff;
 }
-#main-carousel button.flickity-prev-next-button{
-  top:10%;
-  background: rgba(0,221,199,0.5);
+.card-img{
+  height:30vh;
 }
-#main-carousel button.flickity-prev-next-button:hover{
-  background: rgba(0,221,199,1);
+#card{
+  height: 70vh;
+  background-color: rgba(0,221,199,0.8);
 }
-#main-carousel ol.flickity-page-dots{
-  top: 42vh;
+#card{
+  color:#002b5c;
+  border:none;
 }
-#main-carousel ol li.is-selected{
+/* details */
+#details #stat-container{
+  height:70vh;
+  background: #102850;
+  overflow:hidden;
+}
+#details #stats-title{
+  padding-left: 5vw;
+  margin-bottom:5vh;
+  font-weight: bold;
+}
+#details #stats{
   background: #00DDC7;
+  width: 125%;
+  height: 40vh;
+  margin-left: -4vw;
+  -ms-transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+  transform: rotate(-10deg);
 }
-#main-carousel ol li.dot{
-  background: rgba(0,221,199,1);
+#details #stats .stats{
+  height: 5vh;
+  background: #fff;
+  margin:10px;
+  -ms-transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+  transform: rotate(10deg);
 }
-
+/*=== list*/
+#list{
+  background-color: #eee;
+  height: 92vh;
+  margin:0;
+  padding: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+#list .collection-item span{
+  vertical-align:middle;
+}
 /* -- -- -- mobile -- -- -- */
 @media screen and (min-width: 500px) {
 
