@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,600|Varela+Round');
+
+html body{
+  background: url('../images/background.jpg') center center no-repeat;
+  background-size: cover;
+  font-family: Varela Round;
+  box-sizing: border-box;
+}
+
+/*HEADER*/
+header nav{
+  background-color: #102850;
+}
+nav a.pokeycus-title{
+  font-family: Varela Round;
+  color: #fff;
+  font-stretch:
+}
+/*navbar*/
+#slide-out{
+  width: 90vw;
+}
+/*MAIN*/
+section#main{
+  height:90vh;
+/*  background-color: rgba(255,0,0,0.2);
+*/}
+
+section#main .top-section{
+  height: 25vh;
+/*  background-color: rgba(0,255,0,0.2);
+*/}
+
+.carousel {
+  background: #EEE;
+}
+
+.carousel-cell {
+  height: 40vh;
+/*  background: rgba(0,0,0,0.1);
+*/  border-radius: 5px;
+}
+.carousel-cell a h4{
+  color:#fff;
+  font-size: 10vw;
+}
+#main-carousel .carousel-cell img{
+  height:65%;
+  background-color: #102850;
+  border-radius: 50%;
+  border:8px solid #fff;
+}
+#main-carousel button.flickity-prev-next-button{
+  top:10%;
+  background: rgba(0,221,199,0.5);
+}
+#main-carousel button.flickity-prev-next-button:hover{
+  background: rgba(0,221,199,1);
+}
+#main-carousel ol.flickity-page-dots{
+  top: 42vh;
+}
+#main-carousel ol li.is-selected{
+  background: #00DDC7;
+}
+#main-carousel ol li.dot{
+  background: rgba(0,221,199,1);
+}
+
+/* -- -- -- mobile -- -- -- */
+@media screen and (min-width: 500px) {
+
+  .carousel-cell a h4{
+    font-size: 2vw;
+  }
+}
