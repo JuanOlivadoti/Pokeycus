@@ -5,52 +5,105 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
 
-  <!-- CSS  -->
+  <!-- css  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link rel="stylesheet" href="assets/css/pokeycus.css">
 
-  <!-- Flickity -->
-  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.css">
-
 </head>
 <body>
   <header>
-    <nav role="navigation">
+    <nav role="navigation"> <!-- navbar -->
       <div class="nav-wrapper container">
         <div class="col m6 s12">
           <a id="logo-container" href="#" class="brand-logo pokeycus-title"><b>L <img id="pokeycus" src="https://upload.wikimedia.org/wikipedia/en/3/39/Pokeball.PNG" alt=""> Y C U S</b></a>
         </div>
-        <div class="col m6 right">
-          <a href="#"><i class="material-icons">menu</i></a>
+        <div id="menu" class="col m6 right">
+          <a href="#list"><i class="material-icons">menu</i></a>
         </div>
       </div>
-    </nav>
+    </nav> <!-- navbar!end! -->
   </header>
+
   <section id="main">
-    <div id="top-section" class="container-fluid">
-      <div class="row">
-        <div id="info-container" class="col s12 m8">
-          <div id="main-carousel" class="main-carousel row container-fluid">
-            <!-- carousel items here -->
+    <div id="top-section" class="container-fluid row">
+        <div id="card-wrapper" class="col m2 s12"><!-- card -->
+          <div id="card" class="container-fluid row">
+            <div class="col m12 s12 card-img">
+              <img id="inner-card-img" class="center-block" src="assets/images/001.png" alt="">
+              <h5 id="card-name" class="center-align"><b>--</b></h5>
+              <p id="card-twitter" class="center-align">--</p>
+            </div>
+            <div class="col m12 s12">
+              <ul class="collection">
+                <li class="collection-item">
+                  <p><b>Id: </b><span id="card-id"></span></p>
+                </li>
+                <li class="collection-item">
+                  <p><b>Height: </b><span id="card-height"></span></p>
+                </li>
+                <li class="collection-item">
+                  <p><b>Weight: </b><span id="card-weight"></span></p>
+                </li>
+                <li class="collection-item">
+                  <p><b>Base Experience: </b><span id="card-base-exp"></span></p>
+                </li>
+              </ul>
+              <p class="center-align">TYPES</p>
+              <ul id="types" class="container">
+
+                <!-- Types come here -->
+
+              </ul>
+            </div>
+          </div>
+        </div><!-- card!end! -->
+
+        <div id="info-container" class="col m8 s6 hide-on-med-and-down">
+          <div class="container-fluid row ">
+
+            <div id="top-img"><!-- top image -->
+            </div>
+
+            <div id="details" class="container-fluid row"><!-- Pokemon timeline -->
+              <div id="details-body" class="m11 z-depth-3">
+                  <h5 id="stats-title" >STATS</h5>
+                  <ul id="stats">
+                    <label for="">PS</label>
+                    <li class="stats"><p id="ps">. </p></li>
+                    <label for="">ATTACK</label>
+                    <li class="stats"><p id="att">. </p></li>
+                    <label for="">SPECIAL ATTACK</label>
+                    <li class="stats"><p id="sp-att">. </p></li>
+                    <label for="">DEFENCE</label>
+                    <li class="stats"><p id="def">. </p></li>
+                    <label for="">SPECIAL DEFENCE</label>
+                    <li class="stats"><p id="sp-def">. </p></li>
+                    <label for="">SPEED</label>
+                    <li class="stats"><p id="spe">. </p></li>
+                  </ul>
+              </div>
+            </div><!-- Pokemon timeline!end! -->
           </div>
         </div>
-        <div class="col m4 s12">
-          <ul id="list">
-          </ul>
-        </div>
-      </div>
-    </div>
 
+        <div id="list" class="col m2 s12"><!-- pokemon list -->
+          <button id="prev" class="btn" data-src="">prev</button>
+          <button id="next" class="btn" data-src="">next</button>
+          <ul id="list-body" class="collection">
+
+           <!--list comes here-->
+
+          </ul>
+        </div><!-- pokemon list!end!-->
+    </div><!-- main section!end! -->
   </section>
 
-  <!-- JAVASCRIPT -->
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="assets/js/materialize.js"></script>
   <script src="assets/js/init.js"></script>
 
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.js"></script>
 </body>
 </html>

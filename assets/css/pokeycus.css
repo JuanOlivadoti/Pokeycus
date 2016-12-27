@@ -1,14 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,600|Varela+Round');
-*{
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
 
 html body{
-  background: url('../images/background.jpg') center center no-repeat;
-  background-size: cover;
   font-family: Varela Round;
   box-sizing: border-box;
 }
@@ -18,8 +10,10 @@ html body{
 }
 
 /*======================HEADER*/
+/*navbar*/
 header nav{
   background-color: #102850;
+  min-height: 64px;
   height: 8vh;
 }
 nav a.pokeycus-title{
@@ -27,14 +21,12 @@ nav a.pokeycus-title{
   color: #fff;
   font-stretch:
 }
+nav .nav-wrapper i{
+  height:60px;
+  line-height: 60px;
+}
 nav a img{
   height: 1.7rem;
-}
-
-/*navbar*/
-
-#slide-out{
-  width: 90vw;
 }
 /*======================MAIN*/
 section#main{
@@ -44,78 +36,128 @@ section#main{
 section#main #top-section{
   height: 25vh;
 }
-#top-section .row{
-  margin-bottom:0;
-}
 /*=== poke info */
 
-#info-container{
-  margin-top:5vh;
-}
-
 /* card info */
-#card img{
-  margin-top: 10px;
-  height: 100%;
-  background-color: #102850;
-  border-radius: 50%;
-  border:8px solid #fff;
-}
-.card-img{
-  height:30vh;
-}
-#card{
-  height: 70vh;
-  background-color: rgba(0,221,199,0.8);
+#card-wrapper{
+  margin:0;
+  padding: 0;
+  height: 90vh;
+  background: #ddd;
 }
 #card{
   color:#002b5c;
   border:none;
 }
+#card .col{
+  padding: 0;
+}
+#card .card-img{
+  background: #00ddc7;
+}
+#card img{
+  margin-top: 10px;
+  width: 60%;
+  background-color: #102850;
+  border-radius: 50%;
+  border:8px solid #fff;
+}
+#card-name{
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+p#card-twitter{
+  margin:5px;
+}
+#card ul.collection{
+  margin:0;
+  border:none;
+}
+#card li.collection-item{
+  background-color:#0C1E40;
+  color:#ddd;
+}
+#card li.collection-item p{
+  margin:0;
+}
+#types li .btn{
+  width: 100%;
+  margin: 10px 0;
+}
+/* info container */
+#info-container .row{
+  margin:0;
+}
+#info-container #top-img{
+  background: url('../images/background.jpg') center center no-repeat;
+  background-size: cover;
+  height: 40vh;
+}
+#info-container.col{
+  padding:0;
+}
+
 /* details */
-#details #stat-container{
-  height:70vh;
-  background: #102850;
-  overflow:hidden;
+#details{
+  height:45vh;
+  background: #fff;
+}
+#details #details-body{
+  margin:20px 40px;
+  overflow:auto;
+  position: relative;
+  top:-8vh;
+  border:3px solid #00DDC7;
+  border-radius: 10px;
 }
 #details #stats-title{
-  padding-left: 5vw;
-  margin-bottom:5vh;
-  font-weight: bold;
+  padding: 15px 50px 10px;
+  margin:0;
+  color:#FFF;
+  background: #00DDC7;
 }
 #details #stats{
-  background: #00DDC7;
-  width: 125%;
-  height: 40vh;
-  margin-left: -4vw;
-  -ms-transform: rotate(-10deg);
-  -webkit-transform: rotate(-10deg);
-  transform: rotate(-10deg);
+  background: #fff;
 }
 #details #stats .stats{
-  height: 5vh;
-  background: #fff;
-  margin:10px;
-  -ms-transform: rotate(10deg);
-  -webkit-transform: rotate(10deg);
-  transform: rotate(10deg);
+  background: #bbb;
+  margin:0 10px;
 }
+
+#stats .stats p{
+  background-color: #102850;
+  width:0%;
+  color:rgba(0,0,0,0);
+  padding-left: 10px;
+  margin: 0;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+#stats label{
+  padding-left: 10px;
+}
+
 /*=== list*/
 #list{
   background-color: #eee;
-  height: 92vh;
+  height: 90vh;
   margin:0;
   padding: 0;
   overflow-y: scroll;
   overflow-x: hidden;
 }
+#list .collection{
+  margin:0;
+}
 #list .collection-item span{
   vertical-align:middle;
 }
 /* -- -- -- mobile -- -- -- */
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 601px) {
 
-  .carousel-cell a h4{
-    font-size: 2vw;
+  #menu{
+    display:none;
   }
 }
